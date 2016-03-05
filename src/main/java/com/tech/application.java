@@ -6,7 +6,7 @@
 package com.tech;
 
 import com.tech.arglibrary.Lib;
-import com.tech.inneritems.exceptions.NoParserException;
+import com.tech.arglibrary.inneritems.exceptions.NoParserException;
 
 /**
  *

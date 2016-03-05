@@ -1,4 +1,4 @@
-package com.tech.inneritems;
+package com.tech.arglibrary.inneritems;
 
 import java.util.Objects;
 

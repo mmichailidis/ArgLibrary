@@ -1,8 +1,8 @@
 package com.tech.arglibrary;
 
 import com.tech.arglibrary.interfaces.IParser;
-import com.tech.inneritems.Pair;
-import com.tech.inneritems.exceptions.NoParserException;
+import com.tech.arglibrary.inneritems.Pair;
+import com.tech.arglibrary.inneritems.exceptions.NoParserException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -65,7 +65,7 @@ public class Lib {
      * what the String ... str mean?
      * @param params 
      * @return  
-     * @throws com.tech.inneritems.exceptions.NoParserException  
+     * @throws com.tech.arglibrary.inneritems.exceptions.NoParserException  
      */
     public boolean inputParams(String[] params) throws NoParserException{
         if(parser == null){

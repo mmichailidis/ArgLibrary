@@ -1,7 +1,7 @@
 package com.tech.arglibrary;
 
 import com.tech.arglibrary.interfaces.IParser;
-import com.tech.inneritems.Pair;
+import com.tech.arglibrary.inneritems.Pair;
 import java.util.ArrayList;
 import java.util.List;
 
