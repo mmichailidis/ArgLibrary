@@ -32,11 +32,32 @@ public class Lib {
     
     //<editor-fold defaultstate="collapsed" desc="parameterRegister"> 
     
+    /**
+     * Register only one parameter at the time
+     * @param paramName
+     * @return Returns true if the parameter was registered successfully else it returns false so the program will stop
+     */
     public boolean registerParam(String paramName){        
         if(availableParameters.contains(paramName)){
             return false;
         }
         availableParameters.add(paramName);
+        return true;
+    }
+    
+    /**
+     * Register a list of parameters by overloading the single parameter registerParam
+     * @param paramName
+     * @return Returns true if all the parameters were registered successfully else it returns false so the program will stop
+     */
+    public boolean registerParam(List<String> paramName){ 
+        boolean temp;
+        for(String vLookUp:paramName){
+            temp = registerParam(vLookUp);
+            if(!temp){
+                return false;
+            }
+        }
         return true;
     }
     
